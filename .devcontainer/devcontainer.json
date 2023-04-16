@@ -8,13 +8,12 @@
     },
     // Set *default* container specific settings.json values on container create.
     // "settings": {"html.format.templating": true},
-    // 在创建容器时添加要安装的扩展的id。
-    // "extensions": [],
     "customizations": {
         "vscode": {
             "settings": {
                 "html.format.templating": true
             },
+            // 在创建容器时添加要安装的扩展的id。
             "extensions": [
                 "ms-vscode.vscode-typescript-next",  //TypeScript 支持
                 "github.github-vscode-theme",  // GitHub主题
@@ -39,7 +38,7 @@
     "onCreateCommand": "",
     "updateContentCommand":[], 
     // 使用'postCreateCommand'在容器创建成功后，在后台运行命令.
-    "postCreateCommand": "uname -a",
+    "postCreateCommand": "uname -a"
     // "waitFor":"initializeCommand"
 
 
