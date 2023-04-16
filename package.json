@@ -1,0 +1,11 @@
+{
+  "name": "01-envcreate",
+  "version": "1.0.0",
+  "description": "> [VSCode 开发容器文档](https://containers.dev/implementors/json_reference/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

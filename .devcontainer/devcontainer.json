@@ -1,45 +1,39 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 {
     "name": "Learn TypeScript",
-    "initializeCommand":[],
-    "build": {
-        "dockerfile": "Dockerfile",
-        "args": {}
-    },
+    "initializeCommand": [],
+    "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-16",
+    // "build": {
+    //     "dockerfile": "Dockerfile",
+    //     "args": {
+    //     }
+    // },
     // Set *default* container specific settings.json values on container create.
-    // "settings": {"html.format.templating": true},
     "customizations": {
         "vscode": {
-            "settings": {
-                "html.format.templating": true
-            },
+            "settings": {},
             // 在创建容器时添加要安装的扩展的id。
             "extensions": [
-                "ms-vscode.vscode-typescript-next",  //TypeScript 支持
-                "github.github-vscode-theme",  // GitHub主题
-                "GitHub.copilot-nightly",  // Copilot
-                "formulahendry.code-runner" // .RUN code runner
+                "ms-vscode.vscode-typescript-next", //TypeScript 支持
+                "github.github-vscode-theme", // GitHub主题
+                "GitHub.copilot-nightly", // Copilot
+                "formulahendry.code-runner", // .RUN code runner
+                "MS-CEINTL.vscode-language-pack-zh-hans"
             ]
         }
     },
     // 使用'forwardPorts'来列出容器内可用的端口列表。
     "forwardPorts": [],
- 
     // 定义remote用户，vscode-server及其子进程将使用这个用户启动，注释将使用root。 More info: https://aka.ms/vscode-remote/containers/non-root.
-    "remoteUser": "runner",
+    // "remoteUser": "runner",
     // 定义 容器用户
-    "containerUser": "runner",
+    // "containerUser": "runner",
     // 要添加到开发容器的特性。
-    "features": {
-        "golang": "1.19.3"
-    },
-    "remoteEnv": {},
-
-    "onCreateCommand": "",
-    "updateContentCommand":[], 
+    "features": {},
+    "remoteEnv": {}
+    // "onCreateCommand": "",
+    // "updateContentCommand":[], 
     // 使用'postCreateCommand'在容器创建成功后，在后台运行命令.
-    "postCreateCommand": "uname -a"
+    // "postCreateCommand": "uname -a"
     // "waitFor":"initializeCommand"
-
-
 }
